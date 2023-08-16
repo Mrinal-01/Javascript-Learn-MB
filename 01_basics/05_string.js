@@ -18,8 +18,8 @@ const newStr=gameName.substring(0,4); //0 to 3 not 4
 console.log(newStr);
 
 // slice method work like substring but diff is it accept -ve values
-//start from -ve index to no of char. 2nd para is not index not of char
-console.log(gameName.slice(-11,4));
+
+console.log(gameName.slice(-11,-4));
 
  //It will remove all the spaces 
  const str="   Mrinal     "
@@ -40,3 +40,8 @@ console.log(gameName.slice(-11,4));
  //const str2=str1.split('-');
  const str2=str1.split('');
  console.log(str2);
+
+
+ //subStr(): its a legacy method
+ //Its accept 2nd para as length
+ console.log(str1.substr(2,5))
